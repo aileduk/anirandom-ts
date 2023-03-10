@@ -1,0 +1,16 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/functions";
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: rem(50);
+	height: rem(70);
+	padding: rem(10) rem(15);
+
+	border-bottom: rem(1) solid $accentText;
+
+	@media (max-width: rem(576)) {
+		padding: rem(5) rem(10);
+	}
+}

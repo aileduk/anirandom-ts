@@ -1,0 +1,54 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/functions";
+@import "../../assets/styles/animations";
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: calc(100vh - rem(70));
+
+	.preloader {
+		position: relative;
+		display: flex;
+		width: 4em;
+		height: 1em;
+		margin: auto;
+
+		font-size: 20px;
+
+		.dot {
+			position: absolute;
+			width: 1em;
+			height: 1em;
+
+			border-radius: 0.5em;
+
+			background: $accentText;
+
+			animation: 0.5s ease infinite;
+		}
+		.dot1,
+		.dot2 {
+			left: 0;
+		}
+		.dot3 {
+			left: 1.5em;
+		}
+		.dot4 {
+			left: 3em;
+		}
+		.dot1 {
+			animation-name: changeOfSizeDot;
+		}
+		.dot2,
+		.dot3 {
+			animation-name: movementDot;
+		}
+		.dot4 {
+			animation-name: changeOfSizeDot;
+			animation-direction: reverse;
+		}
+	}
+}

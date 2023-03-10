@@ -1,0 +1,6 @@
+@use "sass:math";
+@import "../../assets/styles/variables";
+
+@function rem($px) {
+	@return math.div($px, $mainFSize) * 1rem;
+}

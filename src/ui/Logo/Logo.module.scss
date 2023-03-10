@@ -1,0 +1,25 @@
+@import "../../assets/styles/functions";
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: rem(10);
+
+	span {
+		font-family: "Bungee Spice", cursive;
+		font-size: rem(30);
+
+		@media (max-width: rem(576)) {
+			display: none;
+		}
+	}
+	img {
+		width: rem(50);
+		height: rem(50);
+
+		@media (max-width: rem(576)) {
+			width: rem(60);
+			height: rem(60);
+		}
+	}
+}

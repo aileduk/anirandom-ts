@@ -1,0 +1,18 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/functions";
+
+.button {
+	width: rem(30);
+	height: rem(30);
+	margin-left: auto;
+
+	&:hover {
+		svg path {
+			stroke: $accentText;
+		}
+	}
+	svg path {
+		stroke: $lightenDarkBg;
+		transition: stroke 0.3s ease;
+	}
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;700&display=swap");
+@import "./reset";
+@import "./variables";
+@import "./functions";
+
+body {
+	min-height: 100vh;
+
+	background: $lightBg;
+
+	color: $darkText;
+	font-family: "Roboto", sans-serif;
+	font-size: rem($mainFSize);
+
+	transition: all 1s ease;
+
+	&.dark {
+		background: $darkBg;
+		color: $lightText;
+		transition: all 1s ease;
+	}
+	&.modal {
+		overflow-y: hidden;
+	}
+}

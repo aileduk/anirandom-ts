@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/functions";
+@import "../../assets/styles/animations";
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: rem(50);
+	max-width: rem(1470);
+	width: 100%;
+	min-height: calc(100vh - rem(70));
+	margin: 0 auto;
+	padding: 0 rem(15);
+
+	.greeting {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 2;
+		gap: rem(25);
+		max-width: 60%;
+
+		@media (max-width: rem(768)) {
+			flex-shrink: 1;
+			max-width: 100%;
+		}
+
+		.title {
+			display: flex;
+			align-items: center;
+			gap: rem(5);
+
+			font-size: rem(60);
+			font-weight: 700;
+
+			.emoji {
+				animation: moveHand 2s ease-in-out infinite;
+			}
+		}
+		.text {
+			font-size: rem(20);
+		}
+	}
+	.image {
+		animation: movePikachu 2s ease infinite;
+
+		@media (max-width: rem(768)) {
+			display: none;
+		}
+	}
+}
